@@ -11,24 +11,16 @@ def find_element_index(array, value_to_find)
     end
 end
 
-def find_max_value(array)
-    # Add your solution here
-    counter = 0
-    while counter < array.length do
-      
-      if array[counter + 1] == nil
-            return array[counter]
-      end
 
-        if array[counter] > array.length
-            return array[counter]
-        elsif array[counter] < array.length
-            return array[counter + 1]
-        else 
-            return array[counter]
-        end
-    counter += 1
-    end
+
+def find_max_value(array)
+
+    array.length.times { |index|
+    puts array[index]
+  }
+
+
+    return array.max
 end
 
 def find_min_value(array)
